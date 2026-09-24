@@ -6,7 +6,7 @@ Vor jedem Rendern eine JSON-Datei anlegen. Zeiten dürfen Sekunden oder `HH:MM:S
 {
   "project": {
     "date": "2026-09-02",
-    "title": "Name der Solution",
+    "title": "Name der Runde",
     "source_duration_seconds": 7200,
     "source_review_complete": true,
     "target_seconds": [420, 600],

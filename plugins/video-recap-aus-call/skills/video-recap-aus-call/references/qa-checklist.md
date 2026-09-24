@@ -35,7 +35,7 @@
 - Kritische Grenzen im Originalton kontrolliert.
 - Sprachlautheit zwischen Personen ausgeglichen.
 - Bei `ohne Musik`: keine Platzhalter- oder fremde Musik enthalten; Übergänge akustisch sauber.
-- Bei bereitgestellter Musik: Datei wurde für die aktuelle Solution ausdrücklich ausgewählt und ihre Nutzung bestätigt; Sprache bleibt verständlich; keine willkürlich abgeschnittene Phrase; Intro und Outro hörend geprüft.
+- Bei bereitgestellter Musik: Datei wurde für die aktuelle Runde ausdrücklich ausgewählt und ihre Nutzung bestätigt; Sprache bleibt verständlich; keine willkürlich abgeschnittene Phrase; Intro und Outro hörend geprüft.
 - Musik an Themenübergängen nur bei separat bestätigter Übergangsnutzung; jeder geplante Musikeinsatz ist im fertigen Übergang tatsächlich hörbar und vollständig geprüft.
 - Musik unter Sprache nur bei ausdrücklichem Wunsch und eindeutig leiser als Sprache.
 - Kein Lautheitssprung, bei dem Musik die angrenzende Sprache überdeckt.

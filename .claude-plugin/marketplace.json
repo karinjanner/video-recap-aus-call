@@ -1,9 +1,17 @@
 {
-  "name": "solution-video-schneiden",
-  "owner": { "name": "Karin Janner", "url": "https://github.com/karinjanner" },
-  "metadata": { "description": "Skill für Claude Code: lange Meeting-Aufzeichnungen zu einem 7–10-minütigen Diskussions-Recap schneiden. Braucht das öffentliche Vibe-Editing-Repo." },
+  "name": "video-recap-aus-call",
+  "owner": {
+    "name": "Karin Janner",
+    "url": "https://github.com/karinjanner"
+  },
+  "metadata": {
+    "description": "Skill für Claude Code: aus einer langen Call- oder Meeting-Aufzeichnung einen 7–10-minütigen Video-Recap schneiden. Braucht das öffentliche Vibe-Editing-Repo."
+  },
   "plugins": [
-    { "name": "solution-video-schneiden", "source": "./plugins/solution-video-schneiden",
-      "description": "Verdichtet 1–3-stündige Zoom- und Meeting-Aufzeichnungen zu einem 7–10-minütigen 16:9-Recap. Funktioniert nur zusammen mit github.com/maddexritter-rgb/vibe-editing." }
+    {
+      "name": "video-recap-aus-call",
+      "source": "./plugins/video-recap-aus-call",
+      "description": "Verdichtet 1–3-stündige Zoom-, Call- und Meeting-Aufzeichnungen zu einem 7–10-minütigen 16:9-Recap. Funktioniert nur zusammen mit github.com/maddexritter-rgb/vibe-editing."
+    }
   ]
 }

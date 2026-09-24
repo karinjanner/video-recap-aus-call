@@ -2,7 +2,7 @@
 
 ## Aufgabenverteilung
 
-Das Vibe-Editing-Repo stellt die Produktionsumgebung bereit. Dieser Skill steuert die spezielle Solution-Redaktion.
+Das Vibe-Editing-Repo stellt die Produktionsumgebung bereit. Dieser Skill steuert die Recap-Redaktion.
 
 **Vibe Editing liefert:**
 
@@ -42,7 +42,7 @@ Nur tatsächlich fehlende Abhängigkeiten einrichten. Zusätzliche Installatione
 Für jede Aufnahme einen eigenen Projektordner im Vibe-Editing-Workspace anlegen:
 
 ```text
-solution-name/YYYY-MM-DD/
+reihen-name/YYYY-MM-DD/
 ├── 00_SOURCE/   vollständige Originalaufnahme, Perspektiven, Folien, Chat
 ├── 10_WORK/     Inventar, Transkript, Themenlandkarte, Kandidaten, Schnittplan, Renderdateien
 └── 20_DELIVER/  versionierte MP4-Fassungen, Prüfclips und QA-Berichte
@@ -64,4 +64,4 @@ Originalmedien nie überschreiben oder löschen.
 - Nicht nach `subs_per_1k_views`, CTR oder YouTube-Titelmustern auswählen.
 - Keine automatischen Captions, CTA-Outros, Musik, Reframes oder Uploads einschalten, sofern das Serienprofil beziehungsweise der Auftrag dies nicht ausdrücklich verlangt.
 
-Die vorhandenen Highlight- und Short-Regeln sind für andere Ausgaben sinnvoll, ersetzen aber nicht die Solution-Themenlandkarte und Dramaturgie.
+Die vorhandenen Highlight- und Short-Regeln sind für andere Ausgaben sinnvoll, ersetzen aber nicht die Themenlandkarte und Dramaturgie.

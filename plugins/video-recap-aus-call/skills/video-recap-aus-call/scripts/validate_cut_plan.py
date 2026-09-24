@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prueft Struktur, Zeiten und Rollenlogik eines Solution-Schnittplans."""
+"""Prueft Struktur, Zeiten und Rollenlogik eines Recap-Schnittplans."""
 
 from __future__ import annotations
 
@@ -27,7 +27,7 @@ def seconds(value) -> float:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Solution-Schnittplan validieren")
+    parser = argparse.ArgumentParser(description="Recap-Schnittplan validieren")
     parser.add_argument("plan", type=Path)
     parser.add_argument("--profile", type=Path)
     parser.add_argument("--skip-file-check", action="store_true")

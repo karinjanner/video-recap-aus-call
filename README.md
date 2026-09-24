@@ -1,6 +1,6 @@
-# Solution-Video schneiden
+# Video-Recap aus Call
 
-Ein Skill für **Claude Code**, der aus einer langen Meeting-Aufzeichnung (typisch 1–3 Stunden Zoom) einen zusammenhängenden **7–10-minütigen Recap im Querformat (16:9)** schneidet: mit Cold Open, verschiedenen Stimmen der Runde, Titel- und Abschlusskarte, Themenübergängen und technischer Qualitätsprüfung.
+Ein Skill für **Claude Code**, der aus einer langen Call- oder Meeting-Aufzeichnung (typisch 1–3 Stunden Zoom, etwa ein Workshop, eine Arbeitsgruppe oder ein Community-Treffen) einen zusammenhängenden **7–10-minütigen Recap im Querformat (16:9)** schneidet: mit Cold Open, verschiedenen Stimmen der Runde, Titel- und Abschlusskarte, Themenübergängen und technischer Qualitätsprüfung.
 
 > [!IMPORTANT]
 > **Dieser Skill funktioniert nur zusammen mit dem Vibe-Editing-Repo.**
@@ -25,20 +25,20 @@ Du musst nichts im Terminal eintippen. Claude übernimmt die Einrichtung und fra
 
 Öffne Claude Code und schreibe:
 
-> Installiere mir bitte den Skill von https://github.com/karinjanner/solution-video-schneiden und richte Vibe Editing ein, falls es noch fehlt.
+> Installiere mir bitte den Skill von https://github.com/karinjanner/video-recap-aus-call und richte Vibe Editing ein, falls es noch fehlt.
 
 ### Als Plugin (für alle, die mit Claude Code vertraut sind)
 
 In Claude Code nacheinander eingeben:
 
 ```
-/plugin marketplace add karinjanner/solution-video-schneiden
-/plugin install solution-video-schneiden@solution-video-schneiden
+/plugin marketplace add karinjanner/video-recap-aus-call
+/plugin install video-recap-aus-call@video-recap-aus-call
 ```
 
 ### Von Hand
 
-Unter [Releases](https://github.com/karinjanner/solution-video-schneiden/releases) die Datei `solution-video-schneiden.zip` herunterladen und entpacken. Den Ordner `solution-video-schneiden` nach `~/.claude/skills/` legen.
+Unter [Releases](https://github.com/karinjanner/video-recap-aus-call/releases) die Datei `video-recap-aus-call.zip` herunterladen und entpacken. Den Ordner `video-recap-aus-call` nach `~/.claude/skills/` legen.
 
 ## Was beim ersten Start passiert
 
@@ -50,9 +50,9 @@ Claude holt Vibe Editing dabei ausschließlich von der Originaladresse oben, nie
 
 Leg die Aufnahme in einen Ordner und schreibe Claude zum Beispiel:
 
-> Mach aus der Zoom-Aufnahme in diesem Ordner einen Recap.
+> Mach mir einen Video-Recap aus dem Call in diesem Ordner.
 
-Beim ersten Mal stellt Claude ein paar kurze Fragen: Name und Thema eurer Runde, wer moderiert, ob ihr ein eigenes Design oder eigene Musik habt. Ohne eigenes Design leitet der Skill eines aus euren Folien ab und zeigt dir vorher eine Vorschau. Musik wird nur verwendet, wenn du selbst eine Datei bereitstellst.
+Beim ersten Mal stellt Claude ein paar kurze Fragen: Name und Thema eurer Runde oder Reihe, wer moderiert, ob ihr ein eigenes Design oder eigene Musik habt. Ohne eigenes Design leitet der Skill eines aus euren Folien ab und zeigt dir vorher eine Vorschau. Musik wird nur verwendet, wenn du selbst eine Datei bereitstellst.
 
 ## Datenschutz
 

@@ -1,4 +1,4 @@
-# Ersteinrichtung einer Solution-Reihe
+# Ersteinrichtung einer Recap-Reihe
 
 Ziel ist ein kleines lokales Serienprofil, nicht ein langes Interview. Nur fehlende Entscheidungen erfragen und höchstens drei kurze Fragen auf einmal stellen. Nach jeder Antwort das Profil ergänzen und mit den nächsten offenen Punkten fortfahren.
 
@@ -6,12 +6,12 @@ Ziel ist ein kleines lokales Serienprofil, nicht ein langes Interview. Nur fehle
 
 Diese Angaben können oft schon aus Auftrag, Dateinamen, Folien oder vorhandenen Markenunterlagen belegt werden:
 
-- Name der Solution oder Arbeitsgruppe,
+- Name der Runde, Reihe oder Arbeitsgruppe,
 - Thema und Ziel der Reihe,
 - Moderator:in oder Gastgeber:in,
 - Hauptvortragende der konkreten Sitzung,
 - Zielgruppe und gewünschte Nutzung,
-- vorhandene Designunterlagen und ausdrücklich für diese Solution bereitgestellte Musikdateien.
+- vorhandene Designunterlagen und ausdrücklich für diese Runde bereitgestellte Musikdateien.
 
 Belegte Angaben als Vorschlag zusammenfassen, statt sie erneut offen abzufragen. Namen nie raten.
 
@@ -19,7 +19,7 @@ Belegte Angaben als Vorschlag zusammenfassen, statt sie erneut offen abzufragen.
 
 ### Block 1: Inhalt und Rollen
 
-1. Wie heißt eure Solution und worum geht es in einem Satz?
+1. Wie heißt eure Runde oder Reihe und worum geht es in einem Satz?
 2. Wer moderiert die Treffen? Gibt es in dieser Aufnahme eine andere Person, die den Hauptvortrag oder die Demo hält?
 3. Für wen ist das fertige Video gedacht und was soll diese Person danach verstanden haben?
 
@@ -45,11 +45,11 @@ Gibt es keine Folien, ein ruhiges, barrierearmes neutrales Design verwenden und 
 
 ### Block 3: Musik
 
-1. „Möchtest du für diese Solution Musik verwenden? Wenn ja, welche? Ohne bereitgestellte Musik erstellen wir die Fassung sauber ohne Musik.“
+1. „Möchtest du für diese Runde Musik verwenden? Wenn ja, welche? Ohne bereitgestellte Musik erstellen wir die Fassung sauber ohne Musik.“
 2. Wenn ja: „Bitte lade die Musikdatei hoch oder nenne den eindeutigen lokalen Pfad. Eine Anfangs- und eine Endmusik sind empfehlenswert; das kann derselbe Track oder je ein eigener Track sein. Darf die bereitgestellte Musik für diese Videos verwendet werden?“
 3. Separat fragen: „Darf ich geeignete Ausschnitte dieser Musik auch für Themenübergänge innerhalb des Videos verwenden, wenn zeitlich weit auseinanderliegende Statements oder deutliche Gedankensprünge getrennt werden müssen?“
 
-Die Übergangsfreigabe ist unabhängig von der Freigabe für Titel und Abschluss. Ohne eindeutiges Ja keine Musik an Themenübergängen verwenden. Musik unter Sprache ebenfalls nur nach ausdrücklichem Wunsch einsetzen. Ausschließlich Musik verwenden, die für die aktuelle Solution ausdrücklich bereitgestellt und freigegeben wurde. Nie selbständig Musik suchen oder herunterladen und keine Platzhaltermusik verwenden.
+Die Übergangsfreigabe ist unabhängig von der Freigabe für Titel und Abschluss. Ohne eindeutiges Ja keine Musik an Themenübergängen verwenden. Musik unter Sprache ebenfalls nur nach ausdrücklichem Wunsch einsetzen. Ausschließlich Musik verwenden, die für die aktuelle Runde ausdrücklich bereitgestellt und freigegeben wurde. Nie selbständig Musik suchen oder herunterladen und keine Platzhaltermusik verwenden.
 
 ### Block 4: Ausgabe
 

@@ -12,7 +12,7 @@ Bei deutlichem Themenwechsel eine Kapitelkarte von ungefähr zwei Sekunden mit e
 
 ## Mit ausdrücklich bereitgestellter Musik
 
-Nur die für diese Solution ausdrücklich bereitgestellte und im Serienprofil bestätigte Musik verwenden und nur dann, wenn ihre Nutzung für Themenübergänge separat bestätigt wurde. Eine Freigabe für Titel- oder Abschlussmusik reicht dafür nicht aus. Für jeden Übergang eine vollständige musikalische Phrase wählen, deren Auftakt und Ausklang zur Sprachstelle passen. Pegel, Hüllkurve und Ausschnitt für den konkreten Track hörend bestimmen; keine Musik ohne aktuelle Bereitstellung und Freigabe verwenden.
+Nur die für diese Runde ausdrücklich bereitgestellte und im Serienprofil bestätigte Musik verwenden und nur dann, wenn ihre Nutzung für Themenübergänge separat bestätigt wurde. Eine Freigabe für Titel- oder Abschlussmusik reicht dafür nicht aus. Für jeden Übergang eine vollständige musikalische Phrase wählen, deren Auftakt und Ausklang zur Sprachstelle passen. Pegel, Hüllkurve und Ausschnitt für den konkreten Track hörend bestimmen; keine Musik ohne aktuelle Bereitstellung und Freigabe verwenden.
 
 Unter Sprache darf Musik nur nach ausdrücklichem Wunsch liegen und muss deutlich leiser sein als auf einer Karte. Sie darf keinen Wortanfang, Satzschluss oder leisen Sprecher überdecken. Eine Phrase nicht auf eine willkürliche Dauer kürzen.
 

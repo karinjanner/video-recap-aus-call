@@ -1,9 +1,0 @@
-{
-  "name": "solution-video-schneiden",
-  "displayName": "Solution-Video schneiden",
-  "version": "1.0.0",
-  "description": "Verdichtet 1–3-stündige Zoom- und Meeting-Aufzeichnungen zu einem zusammenhängenden 7–10-minütigen 16:9-Diskussions-Recap. Funktioniert nur zusammen mit dem öffentlichen Vibe-Editing-Repo (github.com/maddexritter-rgb/vibe-editing).",
-  "author": { "name": "Karin Janner", "url": "https://github.com/karinjanner" },
-  "license": "MIT",
-  "keywords": ["video", "zoom", "meeting", "recap", "schnitt", "ffmpeg", "vibe-editing"]
-}

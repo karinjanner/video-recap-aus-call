@@ -59,7 +59,7 @@ def discover(inputs: list[Path]) -> list[Path]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Lokales Medieninventar fuer Solution- und Meeting-Aufnahmen")
+    parser = argparse.ArgumentParser(description="Lokales Medieninventar fuer Call- und Meeting-Aufnahmen")
     parser.add_argument("inputs", nargs="+", type=Path)
     parser.add_argument("--out", type=Path)
     args = parser.parse_args()

@@ -17,7 +17,7 @@ Technische oder redaktionelle Regel mit hohem Wiederholungsrisiko über verschie
 
 ### Stabile Serienpräferenz
 
-Wiederkehrende Entscheidung nur für diese Solution, etwa Rollen, Farben, Musik, Titeltexte, Zielgruppe oder bevorzugte Dramaturgie. Diese gehört in das lokale `series-profile.md`, wenn sie ausdrücklich künftig gelten soll oder sich in mehreren Folgen bewährt hat.
+Wiederkehrende Entscheidung nur für diese Runde, etwa Rollen, Farben, Musik, Titeltexte, Zielgruppe oder bevorzugte Dramaturgie. Diese gehört in das lokale `series-profile.md`, wenn sie ausdrücklich künftig gelten soll oder sich in mehreren Folgen bewährt hat.
 
 ### Entscheidung nur für diese Folge
 

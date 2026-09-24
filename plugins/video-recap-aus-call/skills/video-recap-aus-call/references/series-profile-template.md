@@ -1,8 +1,8 @@
-# Serienprofil: [Name der Solution]
+# Serienprofil: [Name der Runde]
 
 ## Inhalt
 
-- **Solution/Thema:** noch offen
+- **Runde/Thema:** noch offen
 - **Ziel der Reihe:** noch offen
 - **Zielgruppe:** noch offen
 - **Ton:** neugierig, substanziell, werkstattartig
@@ -14,7 +14,7 @@
 - **Typische Quelldauer:** 60–180 Minuten vollständiges Meeting
 - **Ziellänge:** 7–10 Minuten
 - **Format:** 16:9, 1920 × 1080, 25 fps
-- **Dateiname:** `YYYY-MM-DD_solution-slug_vN.mp4`
+- **Dateiname:** `YYYY-MM-DD_reihen-slug_vN.mp4`
 - **Nutzung/Plattform:** noch offen
 - **Ausschlüsse/Privatsphäre:** noch offen
 
@@ -63,7 +63,7 @@ Wenn kein eigenes Design vorliegt, das Design aus den Folien ableiten (siehe Ers
 - **Form:** vollständiger Track / ausgewählte vollständige Phrasen
 - **Mischpräferenzen:** Sprache hat immer Vorrang
 
-Bei `ohne Musik` Titel-, Übergangs- und Abschlusskarten sauber musiklos gestalten. Der Skill bringt selbst keine Musik mit. Eine Musikfreigabe für Titel oder Abschluss erlaubt nicht automatisch die Verwendung an Themenübergängen. Bei späterer Ergänzung Pegel und vollständige musikalische Phrasen anhand der für diese Solution ausdrücklich bereitgestellten Datei neu festlegen; keine Musik ohne aktuelle Bereitstellung und Freigabe verwenden.
+Bei `ohne Musik` Titel-, Übergangs- und Abschlusskarten sauber musiklos gestalten. Der Skill bringt selbst keine Musik mit. Eine Musikfreigabe für Titel oder Abschluss erlaubt nicht automatisch die Verwendung an Themenübergängen. Bei späterer Ergänzung Pegel und vollständige musikalische Phrasen anhand der für diese Runde ausdrücklich bereitgestellten Datei neu festlegen; keine Musik ohne aktuelle Bereitstellung und Freigabe verwenden.
 
 ## Sitzungsabhängige Angaben
 

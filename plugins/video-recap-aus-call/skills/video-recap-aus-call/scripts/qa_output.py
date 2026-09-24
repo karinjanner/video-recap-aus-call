@@ -38,7 +38,7 @@ def loudness(path: Path) -> dict:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Technische Basis-QA fuer Solution-Videos")
+    parser = argparse.ArgumentParser(description="Technische Basis-QA fuer Video-Recaps")
     parser.add_argument("video", type=Path)
     parser.add_argument("--plan", type=Path)
     parser.add_argument("--out", type=Path)
