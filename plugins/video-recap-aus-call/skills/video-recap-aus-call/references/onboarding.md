@@ -25,7 +25,7 @@ Belegte Angaben als Vorschlag zusammenfassen, statt sie erneut offen abzufragen.
 
 Ist das Sitzungsthema aus der Aufnahme nicht klar, zusätzlich fragen: „Welches konkrete Thema oder Ergebnis steht in dieser Folge im Mittelpunkt?“
 
-Außerdem klären, ob die vollständige Meeting-Aufzeichnung vorliegt und ob es weitere synchrone Zoom-Perspektiven, Folien, Chat oder Transkriptdateien gibt. Die typische Quelldauer von ungefähr 60–180 Minuten ist kein Grund zum Kürzen vor der Analyse.
+Außerdem klären, ob die vollständige Meeting-Aufzeichnung vorliegt und ob es weitere Zoom-Ansichten, zusätzliche Kameras desselben Termins, Folien, Chat oder Transkriptdateien gibt. Die typische Quelldauer von ungefähr 60–180 Minuten ist kein Grund zum Kürzen vor der Analyse.
 
 ### Block 2: Gestaltung
 
@@ -59,7 +59,7 @@ Nur fragen, wenn nicht vorgegeben:
 - ob Namen als Lower Third erscheinen dürfen,
 - besondere private Inhalte, Personen oder Passagen, die ausgeschlossen werden sollen.
 
-Die Ziellänge beträgt standardmäßig 7–10 Minuten. Nur nach einer anderen Länge fragen, wenn Material, Nutzungszweck oder ausdrücklicher Wunsch eine bewusste Abweichung nahelegt.
+Die Länge wird nicht hier festgelegt, sondern zusammen mit dem Schnittplan vorgeschlagen und freigegeben (standardmäßig 7–10 Minuten, [Geführter Ablauf](gefuehrter-ablauf.md)).
 
 ## Profil anlegen
 

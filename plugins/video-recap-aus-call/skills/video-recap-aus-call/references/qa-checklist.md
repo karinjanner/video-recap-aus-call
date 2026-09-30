@@ -4,7 +4,7 @@
 
 - Wurde die vollständige Meeting-Aufzeichnung analysiert und als Themenlandkarte dokumentiert?
 - Stammen die ausgewählten Aussagen aus einer echten Prüfung des gesamten Meetings statt nur eines kurzen Ausschnitts?
-- Ist das Ergebnis eine zusammenhängende 7–10-minütige Folge und nicht bloß eine Sammlung unabhängiger Highlights?
+- Ist das Ergebnis eine zusammenhängende Folge in der freigegebenen Länge (standardmäßig 7–10 Minuten) und nicht bloß eine Sammlung unabhängiger Highlights?
 - Themenversprechen der Folge in einem Satz dokumentiert?
 - Versteht eine außenstehende Person nach Cold Open und Titelbrücke das Thema?
 - Beginnt der Cold Open mit einer klaren, vollständigen Aussage der Moderation?

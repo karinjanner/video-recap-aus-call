@@ -10,6 +10,8 @@ Vor jedem Rendern eine JSON-Datei anlegen. Zeiten dürfen Sekunden oder `HH:MM:S
     "source_duration_seconds": 7200,
     "source_review_complete": true,
     "target_seconds": [420, 600],
+    "plan_approved": true,
+    "plan_approval_note": "2026-09-02: freigegeben mit „passt so, los“ nach Tausch von Thema 2 und 3; Länge ca. 8 Minuten",
     "resolution": [1920, 1080],
     "fps": 25,
     "moderator": "Bestätigter Name",
@@ -77,6 +79,8 @@ Für Übergangsmusik zusätzlich:
 
 ## Regeln
 
+- `plan_approved` erst auf `true` setzen, nachdem die Person den vorgelegten Schnittplan ausdrücklich freigegeben hat ([Geführter Ablauf](gefuehrter-ablauf.md)). `plan_approval_note` hält Datum, Wortlaut und eingearbeitete Änderungen fest. Ohne Freigabe meldet `validate_cut_plan.py` einen Fehler, und es wird nicht gerendert.
+- `target_seconds` übernimmt die freigegebene Länge (Standardvorschlag 420–600 Sekunden).
 - Reihenfolge in `segments` entspricht der Ausgabereihenfolge.
 - `source` verweist auf einen Schlüssel in `sources`.
 - `start` und `end` sind Originalzeitcodes.

@@ -1,6 +1,6 @@
 ---
 name: video-recap-aus-call
-description: Verdichtet vollständige, typischerweise 60–180-minütige Zoom-, Meeting- oder Arbeitsgruppenaufzeichnungen (Calls, Workshops, Gruppentreffen) mit dem Vibe-Editing-Repo zu einem zusammenhängenden 7–10-minütigen 16:9-Diskussions-Recap, der verschiedene Stimmen der Runde zeigt und neugierig macht. Nutze den Skill für vollständige Inhaltserschließung, Cold Open, Rollen- und Statementauswahl, interaktive Vortragsdramaturgie, Titel- und Abschlusskarten, Rückfrage nach Musik und Design (ohne eigenes Design eines passend zu den Folien), Themenübergänge, Schnittplan, Rendern und QA. Auch verwenden bei „fass unser Meeting als Video zusammen“, „mach eine Kurzfassung von der Aufzeichnung“ oder „Recap-Video aus dem Zoom-Call“ oder „Recap aus Call“. Nicht für Trailer, Shorts, Highlight-Clips oder reine Uploads. Funktioniert nur zusammen mit dem öffentlichen Vibe-Editing-Repo (github.com/maddexritter-rgb/vibe-editing) in Claude Code.
+description: Verdichtet vollständige, typischerweise 60–180-minütige Zoom-, Meeting- oder Arbeitsgruppenaufzeichnungen (Calls, Workshops, Gruppentreffen) mit dem Vibe-Editing-Repo zu einem zusammenhängenden 7–10-minütigen 16:9-Diskussions-Recap, der verschiedene Stimmen der Runde zeigt und neugierig macht. Nutze den Skill für vollständige Inhaltserschließung, Cold Open, Rollen- und Statementauswahl, interaktive Vortragsdramaturgie, Titel- und Abschlusskarten, Rückfrage nach Musik und Design (ohne eigenes Design eines passend zu den Folien), Themenübergänge, Schnittplan zur Freigabe vor dem Rendern, Rendern und QA. Auch verwenden bei „fass unser Meeting als Video zusammen“, „mach eine Kurzfassung von der Aufzeichnung“ oder „Recap-Video aus dem Zoom-Call“ oder „Recap aus Call“. Nicht für Trailer, Shorts, Highlight-Clips oder reine Uploads. Funktioniert nur zusammen mit dem öffentlichen Vibe-Editing-Repo (github.com/maddexritter-rgb/vibe-editing) in Claude Code.
 ---
 
 # Video-Recap aus Call
@@ -8,6 +8,16 @@ description: Verdichtet vollständige, typischerweise 60–180-minütige Zoom-, 
 > **Voraussetzung:** Dieser Skill ist die redaktionelle Anleitung. Die Schnittwerkzeuge liefert das öffentliche Projekt Vibe Editing (`https://github.com/maddexritter-rgb/vibe-editing`). Ohne dieses Repo auf dem Rechner kann der Skill planen, aber nicht schneiden oder rendern.
 
 Ein vollständiges, meist ein- bis dreistündiges Meeting (etwa einen Zoom-Call) auf einen zusammenhängenden 7–10-minütigen 16:9-**Diskussions-Recap** verdichten: verschiedene Stimmen, Perspektiven und Ergebnisse der Runde zeigen und Menschen, die nicht dabei waren, neugierig machen. Nicht bloß einen kurzen Ausschnitt kürzen und nicht mehrere unabhängige Clips erzeugen. Die bewährte Dramaturgie bleibt stabil; Thema, Personen, Musik, Gestaltung und Serienname werden pro Gruppe in einem lokalen Serienprofil festgelegt.
+
+## Grundregel: erst fragen, dann Plan freigeben, dann rendern
+
+Rendern dauert lange. Deshalb nie direkt einen Zusammenschnitt erzeugen, sondern die Person durch drei Haltepunkte führen ([Geführter Ablauf](references/gefuehrter-ablauf.md)):
+
+1. **Material klären**, bevor aufwendig transkribiert wird: weitere Zoom-Ansichten oder zusätzliche Kameras? Ist das vorhandene Transkript brauchbar, gibt es ein zweites, oder soll neu transkribiert werden?
+2. **Schnittplan vorschlagen** nach vollständiger Sichtung: Themenversprechen, Längenvorschlag (standardmäßig 7–10 Minuten), Reihenfolge als Tabelle, Prioritäten. Nach Änderungswünschen zu Reihenfolge, Schwerpunkten oder Länge und nach eigenen Folien oder Hintergrundbildern fragen. Überarbeiten, bis der Plan ausdrücklich freigegeben ist.
+3. **Fassung abnehmen lassen** nach Rendern und QA.
+
+Ohne ausdrückliche Freigabe des Schnittplans wird nicht gerendert, auch kein Probeschnitt der ganzen Folge. `validate_cut_plan.py` meldet einen Fehler, solange `plan_approved` nicht gesetzt ist.
 
 ## Arbeitsumgebung in Claude
 
@@ -28,7 +38,8 @@ Vor jeder neuen Fassung lesen:
 - das projektspezifische `series-profile.md`,
 - [Langmeeting verdichten](references/long-meeting-workflow.md),
 - [Redaktionelle Regeln](references/editorial-rules.md),
-- [Zoom-Technik](references/zoom-technik.md).
+- [Zoom-Technik](references/zoom-technik.md),
+- [Geführter Ablauf](references/gefuehrter-ablauf.md).
 
 Vor dem Schnitt zusätzlich die [Vorab-Fragen](references/vorab-fragen.md) stellen. Bei Folien, Live-Bildern oder Originaldokumenten [Folien und Originaldokumente](references/folien-und-dokumente.md), bei Startbild oder Upload [Startbild und Veröffentlichung](references/startbild-und-veroeffentlichung.md) anwenden.
 
@@ -52,7 +63,7 @@ Bevorzugte Quellen erkennen: kombinierte Hauptaufnahme, aktive Sprecheransicht, 
 python3 scripts/sync_check.py <maßgebliche-tonspur> <perspektive>.mp4 … --at <3 Zeitpunkte>
 ```
 
-Danach die [Vorab-Fragen](references/vorab-fragen.md) stellen (saubere Folien, Talking Head mit Hinweis auf Rechenzeit, Referenzdokument, Vertraulichkeit, Startbild), sofern das Serienprofil sie nicht schon beantwortet. Zusätzlich gelten zwei Rückfragen aus den [redaktionellen Regeln](references/editorial-rules.md): welche Stellen unscharf werden (nichts ungefragt unscharf machen) und welches Ende die Abschlusskarte bekommt (Empfehlung: Mitmach-Hinweis). Beide Antworten blockieren nur das Rendern.
+Danach **Haltepunkt 1** nach [Geführter Ablauf](references/gefuehrter-ablauf.md): gefundene Quellen kurz zusammenfassen und fragen, ob es weitere Zoom-Ansichten oder zusätzliche Kameras desselben Termins gibt, und klären, wie mit dem Transkript verfahren wird (vorhandenes nutzen, zweites Transkript abgleichen oder selbst neu transkribieren). Auf die Antwort warten, bevor eine aufwendige Volltranskription startet. Dazu die [Vorab-Fragen](references/vorab-fragen.md) stellen (saubere Folien, Talking Head mit Hinweis auf Rechenzeit, Referenzdokument, Vertraulichkeit, Startbild), sofern das Serienprofil sie nicht schon beantwortet. Zusätzlich gelten zwei Rückfragen aus den [redaktionellen Regeln](references/editorial-rules.md): welche Stellen unscharf werden (nichts ungefragt unscharf machen) und welches Ende die Abschlusskarte bekommt (Empfehlung: Mitmach-Hinweis). Beide Antworten blockieren nur das Rendern.
 
 Für die konkrete Sitzung folgende Rollen belegen, ohne Namen zu raten:
 
@@ -62,7 +73,7 @@ Für die konkrete Sitzung folgende Rollen belegen, ohne Namen zu raten:
 
 ### 2. Inhalt erschließen
 
-Das gesamte Meeting transkribieren und das Transkript stichprobenartig gegen das Audio prüfen. Ein vorhandenes Zoom-Transkript hat oft Lücken; in Frage kommende Passagen lokal mit Whisper nachtranskribieren ([Zoom-Technik](references/zoom-technik.md)). Zuerst eine vollständige Themenlandkarte mit Zeitbereichen, Sprecherrollen, Vortragsteilen, Diskussionen, Beispielen, Entscheidungen und Ergebnissen erstellen. Erst danach einzelne Clipkandidaten auswählen. Nicht nur Anfang, markante Stellen oder einen kurzen Ausschnitt analysieren.
+Das Transkript nach der Wahl aus Haltepunkt 1 aufbauen (vorhandenes Transkript, Abgleich mit einem zweiten oder eigene Transkription) und stichprobenartig gegen das Audio prüfen. In Frage kommende Passagen lokal mit Whisper nachtranskribieren ([Zoom-Technik](references/zoom-technik.md)). Zuerst eine vollständige Themenlandkarte mit Zeitbereichen, Sprecherrollen, Vortragsteilen, Diskussionen, Beispielen, Entscheidungen und Ergebnissen erstellen. Erst danach einzelne Clipkandidaten auswählen. Nicht nur Anfang, markante Stellen oder einen kurzen Ausschnitt analysieren.
 
 Vor der Auswahl ein Themenversprechen in einem Satz formulieren: Was soll eine außenstehende Person nach diesem Video verstanden haben? Nebenpfade benennen, die nicht in die Folge gehören.
 
@@ -74,7 +85,7 @@ Jeden Kandidaten im Originalzusammenhang mit mindestens zwei Sekunden Vor- und N
 
 ### 3. Aussagen auswählen
 
-Einen ersten Vorschlag ohne unnötige Rückfragen bauen. Priorisieren:
+Einen ersten Vorschlag selbständig bauen, ohne jede Einzelentscheidung abzufragen; er wird in Schritt 5 als Schnittplan vorgelegt. Priorisieren:
 
 1. klare Passung zum Themenversprechen,
 2. eigenständiger, verständlicher Gedanke,
@@ -96,9 +107,9 @@ Standardstruktur:
 
 Echte Themenwechsel sichtbar und gegebenenfalls hörbar trennen. Verwandte Gedanken dürfen direkt weiterlaufen. Musik nie auf Kartenlänge abschneiden; entweder eine vollständige musikalische Phrase verwenden oder musiklos arbeiten.
 
-### 5. Schnittplan sichern
+### 5. Schnittplan vorlegen, freigeben lassen und sichern
 
-Vor dem Rendern `02-cut-plan.json` nach [Schnittplan](references/cut-plan.md) erstellen und prüfen:
+`02-cut-plan.json` nach [Schnittplan](references/cut-plan.md) als Entwurf erstellen. Dann **Haltepunkt 2** nach [Geführter Ablauf](references/gefuehrter-ablauf.md): den Plan in einfacher Sprache als Tabelle zeigen, mit Themenversprechen, Längenvorschlag, Prioritäten, bewusst Weggelassenem und offenen Punkten. Fragen, ob Reihenfolge, Schwerpunkte und Länge passen und ob eigene Folien oder Hintergrundbilder verwendet werden sollen. Änderungen einarbeiten und den Plan erneut zeigen, bis er ausdrücklich freigegeben ist. Erst dann `plan_approved: true` und `plan_approval_note` setzen und prüfen:
 
 ```bash
 python3 scripts/validate_cut_plan.py 02-cut-plan.json --profile series-profile.md
@@ -111,7 +122,7 @@ Im Plan Originaldauer, bestätigte vollständige Sichtung und Zielbereich dokume
 
 ### 6. Rendern
 
-Die passenden Werkzeuge aus dem Vibe-Editing-Repo wiederverwenden. Für einen einzelnen Quellstrom können dessen Präzisionsschnitt-Werkzeuge genutzt werden; bei synchronen Zoom-Perspektiven, Folien und komplexer 16:9-Montage ein projektspezifisches, versioniertes FFmpeg-Skript erzeugen. Zwischenfassungen nie überschreiben. Aus Originalquellen oder einem verlustarmen Zwischenmaster rendern. Segmente einzeln cachen, damit spätere Bildkorrekturen nur betroffene Segmente neu rendern.
+Nur mit freigegebenem Schnittplan. Die passenden Werkzeuge aus dem Vibe-Editing-Repo wiederverwenden. Für einen einzelnen Quellstrom können dessen Präzisionsschnitt-Werkzeuge genutzt werden; bei synchronen Zoom-Perspektiven, Folien und komplexer 16:9-Montage ein projektspezifisches, versioniertes FFmpeg-Skript erzeugen. Zwischenfassungen nie überschreiben. Aus Originalquellen oder einem verlustarmen Zwischenmaster rendern. Segmente einzeln cachen, damit spätere Bildkorrekturen nur betroffene Segmente neu rendern.
 
 Sofern das Serienprofil nichts anderes festlegt, gelten: 1920 × 1080, 25 fps, H.264/yuv420p, AAC Stereo 48 kHz, Sprachziel ungefähr −16 LUFS und `+faststart`. Ausdrücklich bereitgestellte Musik zunächst normalisieren, unter Sprache deutlich absenken und alle Pegel hörend prüfen. Harte Audioübergänge vermeiden.
 
@@ -137,7 +148,7 @@ Bei ausdrücklich reinen Bildänderungen Inhalt, Ton, Musik, Reihenfolge und Sch
 - **ab jetzt für diese Reihe:** lokales Serienprofil aktualisieren,
 - **für alle Reihen:** nur eine nachweislich allgemeine redaktionelle oder technische Regel im Skill ändern.
 
-### 8. Qualität prüfen und übergeben
+### 8. Qualität prüfen, übergeben und abnehmen lassen
 
 ```bash
 python3 scripts/qa_output.py deliver/fassung-v1.mp4 --plan 02-cut-plan.json --out 04-qa.json
@@ -155,6 +166,8 @@ Ausgeben:
 - kritische Prüfclips,
 - Startbild-PNGs, falls gewählt,
 - kompaktes Projektlog mit Vorab-Antworten, Entscheidungen und Learnings.
+
+Danach **Haltepunkt 3**: die Fassung zeigen und fragen, ob sie passt oder was geändert werden soll.
 
 Wenn zusätzlich YouTube-Kapitel für eine Vollaufnahme oder Endfassung verlangt werden, [YouTube-Kapitel](references/youtube-chapters.md) lesen und anwenden.
 

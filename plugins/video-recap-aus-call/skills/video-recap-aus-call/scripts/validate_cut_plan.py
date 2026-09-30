@@ -72,6 +72,10 @@ def main() -> int:
         warnings.append("Dauer der vollstaendigen Meeting-Quelle fehlt")
     if project.get("source_review_complete") is not True:
         warnings.append("Vollstaendige Transkript- und Themenlandkartenpruefung ist nicht bestaetigt")
+    if project.get("plan_approved") is not True:
+        errors.append("Schnittplan ist nicht freigegeben (plan_approved fehlt): erst vorlegen und ausdruecklich freigeben lassen")
+    elif not str(project.get("plan_approval_note") or "").strip():
+        warnings.append("plan_approval_note fehlt: Datum und Wortlaut der Freigabe festhalten")
     if music_mode not in {"none", "own"}:
         errors.append("music_mode muss 'none' oder 'own' sein")
 
@@ -211,6 +215,7 @@ def main() -> int:
         "source_seconds": round(source_duration, 3) if source_duration > 0 else None,
         "estimated_seconds": round(duration, 3),
         "compression_ratio": compression_ratio,
+        "plan_approved": project.get("plan_approved") is True,
         "music_mode": music_mode,
         "transition_music_allowed": transition_music_allowed,
         "errors": errors,
