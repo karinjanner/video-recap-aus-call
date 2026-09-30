@@ -25,6 +25,9 @@
 - Lower Third zeigt bestätigten Namen ohne E-Mail-Adresse.
 - Crops entfernen störende Ränder, ohne Gesicht, Gestik oder wichtige Objekte abzuschneiden.
 - Keine privaten Tabs, Benachrichtigungen, Adressen oder sensiblen Projektnamen.
+- Unscharf ist genau das, was bestätigt wurde; nichts wurde ungefragt unscharf gemacht.
+- In der Galerie sitzt der Rahmen in jedem Layout-Zeitraum auf der Kachel der sprechenden Person.
+- Die Abschlusskarte trägt das bestätigte Ende (Standardvorschlag: Mitmach-Hinweis) ohne unbestätigten Link oder Termin.
 - Titel-, Themen- und Abschlusskarten ausreichend lange lesbar.
 - Design folgt dem Serienprofil; ein aus Folien abgeleitetes Design wurde per Vorschau bestätigt, eine neutrale Gestaltung ist als vorläufig gekennzeichnet; keine fremden Logos übernommen.
 

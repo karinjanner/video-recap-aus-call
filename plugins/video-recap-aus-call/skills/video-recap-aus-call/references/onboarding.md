@@ -30,7 +30,7 @@ Außerdem klären, ob die vollständige Meeting-Aufzeichnung vorliegt und ob es 
 ### Block 2: Gestaltung
 
 1. Gibt es ein eigenes Design, das verwendet werden soll – etwa Logo, Farben, Schrift, Vorlagen oder ein Referenzvideo?
-2. Gibt es gewünschten Text für Titel- und Abschlusskarte?
+2. Gibt es gewünschten Text für Titel- und Abschlusskarte? Für das Ende einen Mitmach-Hinweis vorschlagen, etwa „Lust, mitzudenken? Sei bei einem der nächsten Treffen dabei.“, oder einen Teaser auf das nächste Treffen.
 3. Falls kein Design hochgeladen wird: „Dann baue ich ein Design passend zu euren Folien. Einverstanden?“
 
 **Design aus den Folien ableiten**, wenn kein eigenes Design bereitgestellt wird und die Aufnahme Folien enthält (oder saubere Folien geliefert wurden):

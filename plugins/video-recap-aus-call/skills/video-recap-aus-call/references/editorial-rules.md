@@ -45,11 +45,28 @@
 - Bei gleichem Ausgangsbild freigegebene Crops konsistent anwenden.
 - Reine Bildkorrekturen dürfen weder Ton, Satzgrenzen, Musik noch Reihenfolge verändern.
 
+## Galerie mit Rahmen
+
+- Nachfragen der Moderation und kurze Zwischenfragen aus der Runde in der Galerie zeigen, damit die Runde sichtbar bleibt. Das Gleiche gilt für kurze Galeriebrücken.
+- Um die Kachel der gerade sprechenden Person einen Rahmen in der Akzentfarbe aus dem Serienprofil legen, damit sofort klar ist, wer spricht.
+- Die Galerie wechselt im Call ihr Layout, wenn Personen kommen, gehen oder die Kamera ausschalten. Die Rahmenkoordinaten deshalb je Layout-Zeitraum bestimmen und das Segment an jedem Wechsel teilen ([Zoom-Technik](zoom-technik.md)).
+- Die Galerie mit Rahmen eignet sich auch, um Kürzungen innerhalb eines längeren Beitrags zu überdecken, damit sie nicht als Sprung im Sprecherbild auffallen.
+
+## Unschärfe nur nach Rückfrage
+
+Abweichend von den allgemeinen [Vorab-Fragen](vorab-fragen.md) wird in diesem Skill nichts ungefragt unscharf gemacht. Manches, das privat wirkt, soll die Runde vielleicht doch sehen.
+
+- Beim Sichten alle Stellen sammeln, die private Daten zeigen könnten, etwa Namen Dritter, Adresszeilen, Kunden- oder Umsatzangaben, persönliche Notizen, Seitenleisten mit Personennamen oder Browser-Tabs.
+- Diese Stellen vor dem Rendern als Liste mit Zeitpunkt und Standbild vorlegen. Für jede Stelle eine Empfehlung geben: unscharf, aus dem Ausschnitt nehmen oder zeigen.
+- Nur umsetzen, was bestätigt wurde. Die Entscheidungen im Projektlog festhalten und in der Übergabe auflisten.
+- E-Mail-Adressen und Zoom-Namen mit E-Mail-Anteil bleiben ohne Rückfrage verdeckt.
+
 ## Abschluss
 
 - Mit einer vollständigen Aussage der Moderation enden, die Ergebnis, Erkenntnis, offenen Stand, Konsequenz oder nächsten Schritt trägt.
 - Das Moderationsstatement darf aus früherem Material stammen, wenn es fair zum gezeigten Verlauf passt; keinen falschen zeitlichen oder kausalen Schluss vortäuschen.
 - Enthält die Aufnahme keine geeignete Moderationsaussage, dies vor dem Rendern kenntlich machen und eine belegte Alternative zur Freigabe vorschlagen; kein gesprochenes Fazit erfinden.
+- Vor dem Rendern fragen, welches Ende die Abschlusskarte für diese Folge bekommen soll: einen Mitmach-Hinweis, einen Teaser auf das nächste Treffen (Thema, Person, Termin, nur wenn bestätigt) oder beides. Den Mitmach-Hinweis als Empfehlung vorschlagen, zum Beispiel `Lust, mitzudenken?` mit `Sei bei einem der nächsten Treffen dabei.` Er steht immer auf der letzten Karte, ohne Link und Termin, solange beides nicht bestätigt ist.
 
 ## Fehler, die nicht wiederholt werden dürfen
 

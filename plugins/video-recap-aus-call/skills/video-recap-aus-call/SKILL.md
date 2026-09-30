@@ -52,7 +52,7 @@ Bevorzugte Quellen erkennen: kombinierte Hauptaufnahme, aktive Sprecheransicht, 
 python3 scripts/sync_check.py <maßgebliche-tonspur> <perspektive>.mp4 … --at <3 Zeitpunkte>
 ```
 
-Danach die [Vorab-Fragen](references/vorab-fragen.md) stellen (saubere Folien, Talking Head mit Hinweis auf Rechenzeit, Referenzdokument, Vertraulichkeit, Startbild), sofern das Serienprofil sie nicht schon beantwortet.
+Danach die [Vorab-Fragen](references/vorab-fragen.md) stellen (saubere Folien, Talking Head mit Hinweis auf Rechenzeit, Referenzdokument, Vertraulichkeit, Startbild), sofern das Serienprofil sie nicht schon beantwortet. Zusätzlich gelten zwei Rückfragen aus den [redaktionellen Regeln](references/editorial-rules.md): welche Stellen unscharf werden (nichts ungefragt unscharf machen) und welches Ende die Abschlusskarte bekommt (Empfehlung: Mitmach-Hinweis). Beide Antworten blockieren nur das Rendern.
 
 Für die konkrete Sitzung folgende Rollen belegen, ohne Namen zu raten:
 

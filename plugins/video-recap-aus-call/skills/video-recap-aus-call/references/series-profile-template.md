@@ -39,6 +39,7 @@
 - **Titel:** noch offen
 - **Leitgedanke oder CTA:** noch offen
 - **Zusatz:** optional
+- **Ende:** Mitmach-Hinweis (Standardvorschlag) / Teaser auf das nächste Treffen / beides; pro Folge vor dem Rendern bestätigen
 
 ## Design
 
